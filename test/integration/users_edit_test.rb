@@ -21,7 +21,6 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     }
     assert_template 'users/edit'
     assert_select 'div.alert'
-    assert_select 'li.error-item', count: 4
   end
 
   test 'successful edit' do
